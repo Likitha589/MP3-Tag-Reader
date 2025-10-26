@@ -1,0 +1,31 @@
+START
+  │
+  ▼
+Open MP3 File
+  │
+  ▼
+Read ID3v2 Header (first 10 bytes)
+  │
+  ▼
+Get Tag Size from Header
+  │
+  ▼
+Read Each Frame in Tag:
+  ├─ Get Frame ID (TIT2, TPE1, TALB, TYER, etc.)
+  ├─ Get Frame Size
+  ├─ Read Frame Data
+  └─ Store in Struct
+  │
+  ▼
+Display Metadata:
+  ├─ Title
+  ├─ Artist
+  ├─ Album
+  ├─ Year
+  └─ Comment/Genre
+  │
+  ▼
+Close File
+  │
+  ▼
+END
